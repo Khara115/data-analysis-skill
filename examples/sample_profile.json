@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "source_file": "D:\\kaggle_s6e9_agent\\data\\train.csv",
+    "total_records": 668665,
+    "columns": [
+      "id",
+      "Age",
+      "Annual_Income_USD",
+      "Daily_Commute_km",
+      "Number_of_Cars_Owned",
+      "Charging_Stations_Near_Home",
+      "Charging_Stations_Near_Work",
+      "Environmental_Concern_Level",
+      "Gender",
+      "City_Type",
+      "Current_Car_Type",
+      "Home_Charging_Possible",
+      "Subsidy_Available",
+      "Range_Anxiety_Level",
+      "Will_Buy_EV",
+      "target",
+      "Income_Decile",
+      "High_Income",
+      "Low_Anxiety",
+      "Quadrant"
+    ],
+    "missing_values": {
+      "id": 0,
+      "Age": 0,
+      "Annual_Income_USD": 0,
+      "Daily_Commute_km": 0,
+      "Number_of_Cars_Owned": 0,
+      "Charging_Stations_Near_Home": 0,
+      "Charging_Stations_Near_Work": 0,
+      "Environmental_Concern_Level": 0,
+      "Gender": 0,
+      "City_Type": 0,
+      "Current_Car_Type": 0,
+      "Home_Charging_Possible": 0,
+      "Subsidy_Available": 0,
+      "Range_Anxiety_Level": 0,
+      "Will_Buy_EV": 0,
+      "target": 0
+    }
+  },
+  "baseline": {
+    "buy_rate": 0.17465,
+    "subsidy_lift": 0.26894
+  },
+  "subsidy_breakdown": {
+    "No": {
+      "count": 248756,
+      "buy_rate": 0.00576
+    },
+    "Yes": {
+      "count": 419909,
+      "buy_rate": 0.2747
+    }
+  },
+  "anxiety_breakdown": {
+    "High": {
+      "count": 2194,
+      "buy_rate": 0.00137
+    },
+    "Low": {
+      "count": 603972,
+      "buy_rate": 0.18903
+    },
+    "Medium": {
+      "count": 62499,
+      "buy_rate": 0.04174
+    }
+  },
+  "charging_vs_anxiety_distribution": {
+    "No": {
+      "High": 0.01065,
+      "Low": 0.69146,
+      "Medium": 0.29789
+    },
+    "Yes": {
+      "High": 0.0,
+      "Low": 0.99754,
+      "Medium": 0.00246
+    }
+  },
+  "environmental_concern_breakdown": {
+    "1.0": {
+      "count": 147476,
+      "buy_rate": 0.00566
+    },
+    "2.0": {
+      "count": 135133,
+      "buy_rate": 0.02138
+    },
+    "3.0": {
+      "count": 127351,
+      "buy_rate": 0.11092
+    },
+    "4.0": {
+      "count": 130469,
+      "buy_rate": 0.24885
+    },
+    "5.0": {
+      "count": 128236,
+      "buy_rate": 0.51829
+    }
+  },
+  "income_decile_gradient": [
+    {
+      "decile_range": "(29999.999, 45980.0]",
+      "count": 66942,
+      "buy_rate": 0.04449
+    },
+    {
+      "decile_range": "(45980.0, 62671.0]",
+      "count": 66861,
+      "buy_rate": 0.08459
+    },
+    {
+      "decile_range": "(62671.0, 71832.0]",
+      "count": 66834,
+      "buy_rate": 0.10662
+    },
+    {
+      "decile_range": "(71832.0, 78915.0]",
+      "count": 66844,
+      "buy_rate": 0.13165
+    },
+    {
+      "decile_range": "(78915.0, 84880.0]",
+      "count": 66977,
+      "buy_rate": 0.15608
+    },
+    {
+      "decile_range": "(84880.0, 91619.0]",
+      "count": 67013,
+      "buy_rate": 0.17974
+    },
+    {
+      "decile_range": "(91619.0, 96748.0]",
+      "count": 66616,
+      "buy_rate": 0.19767
+    },
+    {
+      "decile_range": "(96748.0, 107798.0]",
+      "count": 66854,
+      "buy_rate": 0.21955
+    },
+    {
+      "decile_range": "(107798.0, 122349.0]",
+      "count": 66970,
+      "buy_rate": 0.28904
+    },
+    {
+      "decile_range": "(122349.0, 188549.0]",
+      "count": 66754,
+      "buy_rate": 0.33731
+    }
+  ],
+  "four_quadrant_segmentation": {
+    "Q1_Gold_Rush_HighInc_LowAnx": {
+      "count": 304778,
+      "share": 0.4558,
+      "buy_rate": 0.26243
+    },
+    "Q2_Policy_Sensitive_LowInc_LowAnx": {
+      "count": 299194,
+      "share": 0.4474,
+      "buy_rate": 0.11425
+    },
+    "Q3_Infra_Constrained_HighInc_HighAnx": {
+      "count": 29689,
+      "share": 0.0444,
+      "buy_rate": 0.06181
+    },
+    "Q4_Frozen_LowInc_HighAnx": {
+      "count": 35004,
+      "share": 0.0523,
+      "buy_rate": 0.0222
+    }
+  }
+}
